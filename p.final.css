@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+@media (max-width: 575.98px) and (orientation:portrait){
+body{background: #6DA6FA;}
+}
 .divclass img{
     display: flex;
     max-width: 100%;
@@ -11,6 +13,7 @@
     width: 100px; 
     
 }
+
 
 .btn-group .button{
      padding: 15px 32px;
