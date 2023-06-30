@@ -9,7 +9,7 @@ body{background: #6DA6FA;}
 @media (min-width: 1199.98px){
     body {background: #6DA6FA;}
 }
-@media (min-width: 576px) and (max-width: 991.98px) ans (orientation: portrait){
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){
     body {background: #6DA6FA}
 }
 .divclass img{
