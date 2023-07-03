@@ -43,7 +43,7 @@ body{background: #6DA6FA;}
     }
 
 .clima{
-   margin-left: 70em; 
+   margin-left: 38em; 
    margin-top: -12em;
 }
 @font-face{
@@ -127,7 +127,7 @@ footer{
     padding: 50px;
 }
 .portfolio a{
-    margin-left: 110em;
+    margin-left: 75em;
     height: 50%;
     width: 50%;
     display: flex;
