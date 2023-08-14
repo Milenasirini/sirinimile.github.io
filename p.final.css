@@ -12,19 +12,36 @@ body{background: #6DA6FA;}
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){
     body {background: #6DA6FA}
 }
+
+header{
+    display:flex;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.divclass{
+    float:left;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .divclass img{
-    display: flex;
-    max-width: 100%;
-    height: 80px;
-    width: 100px; 
+    max-width: 120%;
+    height: 100px;
     
 }
 
+.btn-group{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .btn-group .button{
-     padding: 15px 32px;
+    padding: 15px 32px;
     border: 2px, solid, #ADEADC;    
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
@@ -38,65 +55,181 @@ body{background: #6DA6FA;}
         background-color: #7D889E;
     }
     header{
-        background-image: linear-gradient(to bottom right, #6DA6FA, #31d8d2aa);
+        background-image: linear-gradient(to bottom right, #99E7FA 30%,#000000 60%);
        
     }
 
 .clima{
-   margin-left: 38em; 
-   margin-top: -12em;
+    align-items: right;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 @font-face{
     font-family: fuente;
     src: url(JMH\ Typewriter\ dry-Black.otf)
 }
 
-body{    
-   
-    background-image: linear-gradient(to bottom right, #95B7F0, #D0D6EF);
-        
-}
-.imgauto img{
-    width: 50em;
-    height: 50em;
-    margin-top: -43em;
-    margin-right: 3em;
-    
-    
-}
-.textodelbody{
-    margin: 10px;
-    font-size: 30px;
-    margin-left: 30em;
 
+.imgauto{
+    background-image: url( crique.jpg);
+    margin-top: -5em;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   display: flex;
+   position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.ubicacion{
+    display: flex;
+    position: relative;
+   margin-top:-10em;
+   margin-right: 15px;
+}
+.textubi{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+ .textodelbody{
+ font-size: 20px;
+ padding-left: 0%;
+ padding-right: 0%;
+ float: left;
+ text-align: center;
+ margin: 20px 0px;
+ width: 100%;
+ padding-top: 0px;
+ list-style-type: none;
+ margin-top: -35em;
+}
+.nav ul{
+    list-style: none;
+    text-align: center;
+    
+    cursor: pointer;
+    padding: 2.5em;
+    margin: 0;
+    
+    
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    width: 100px;
+    display: flex;
+    margin-left: 20em;
+    z-index: 1;
+
+    
+}
+
+
+
+.btn-columnas .button{
+    padding: 15px 32px;
+    border: 2px, solid, #ADEADC;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition-duration: 0.9s;
+    font-size: 16px;
+    font-weight: 700;
+}
+.a{
+    text-decoration: none;
+    color: rgb(12, 68, 200);
+    
+}
+.nav a .button{
+    font-weight: 600px;
+    padding-right: 10px;
+    padding: 15px 32px;
+    border: 2px, solid, #ADEADC;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition-duration: 0.9s;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav a:hover{
+color: gray;
+}
+.btn-columnas{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.nav{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+
+ul.textodelbody li{
+padding-right:  2px;
+display: inline;
+padding-left: 2px;
+float: left;
+padding-bottom: 2px;
+width: 30%;
+padding-top: 2px;
+column-rule-style: double;
 }
 .MensajeBody{
     display: block;
     text-align: center;
     font-weight: 700;
-    margin-top: 135px;
+    margin-top: 10px;
     font-size: 30px;
+    overflow-x: hidden;
 
 }
 footer{
+    
     position: relative;
+    margin-top: -3em;
     bottom: 0;    
     left: 0;
     background-color: #86AD99;
     height: 150px;
     width: 100%;  
-}
+    overflow: hidden;
+    
+} 
 .textofooter{
     font-size: 30px;
     text-align: left;
+    overflow-x: hidden;
 }
 .facebook a{
+    margin-top: 3em;
     position:absolute;
     display: flex;
     width: 30%;
     height: 30%;    
+    overflow-x: hidden;
 }
 .instagram a{
+    margin-top: 3em;
     position: absolute;
     display: flex;
     width: 35%;
@@ -104,6 +237,7 @@ footer{
     margin-left: 50px;
 }
 .youtube a{
+    margin-top: 3em;
     position: absolute;
     display: flex;
     width: 35%;
