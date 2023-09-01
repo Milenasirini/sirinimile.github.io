@@ -1,22 +1,33 @@
-*{
-    border:0;
-    margin: 0;
-    padding: 0;
-}
-@media (max-width: 575.98px) and (orientation:portrait){
-body{background: #6DA6FA;}
-}
-@media (min-width: 1199.98px){
-    body {background: #6DA6FA;}
-}
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){
-    body {background: #6DA6FA}
-}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 100%;
+    padding: 2em;
+    font-size: 2rem;
+  }
+  /* media para celular*/
+  @media (min-width: 768px) {
+    .item{
+      width: 50%;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media(min-width: 1024px) {
+    .item{
+      width: 33.33%;
+      font-size: 1rem;
+    }
+  }
 
 header{
     display:flex;
     height: 100px;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .divclass{
@@ -24,11 +35,13 @@ header{
     margin-left: 5px;
     margin-top: auto;
     margin-bottom: auto;
+    overflow-x: hidden;
 }
 
 .divclass img{
     max-width: 120%;
     height: 100px;
+    overflow-x: hidden;
     
 }
 
@@ -50,6 +63,7 @@ header{
     transition-duration: 0.9s;
     font-size: 16px;
     font-weight: 700;
+    overflow-x: hidden;
  }
  .btn-group .button:hover{
         background-color: #7D889E;
@@ -63,6 +77,7 @@ header{
     align-items: right;
     margin-top: auto;
     margin-bottom: auto;
+    overflow-x: hidden;
 }
 @font-face{
     font-family: fuente;
@@ -73,7 +88,8 @@ header{
 .imgauto{
     background-image: url( crique.jpg);
     margin-top: -5em;
-    opacity: 0.5;
+    opacity: 0.7;
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
    display: flex;
@@ -81,20 +97,13 @@ header{
     width: 100%;
     height: 100%;
     z-index: -1;
+    
 }
 
-.ubicacion{
-    display: flex;
-    position: relative;
-   margin-top:-10em;
-   margin-right: 15px;
-}
-.textubi{
-    font-size: 20px;
-    margin-right: 30px;
-}
 
+/*bordes nuestros servicios, fotos*/
  .textodelbody{
+
  font-size: 20px;
  padding-left: 0%;
  padding-right: 0%;
@@ -104,29 +113,34 @@ header{
  width: 100%;
  padding-top: 0px;
  list-style-type: none;
- margin-top: -35em;
+ margin-top: -40em;
 }
 .nav ul{
     list-style: none;
     text-align: center;
-    
     cursor: pointer;
     padding: 2.5em;
     margin: 0;
     
-    
+     
 }
+
 .nav li{
     display: inline-block;
+    
 }
 .nav a{
 
     text-align: center;
     color: #000000;
-    text-decoration: underline;
+    background-color: #7D889E;
+    border-style: solid;
+    border-color: #000000 ;
+    border-radius: 10%;
     width: 100px;
     display: flex;
     margin-left: 20em;
+    padding: 5%;
     z-index: 1;
 
     
@@ -135,6 +149,7 @@ header{
 
 
 .btn-columnas .button{
+    color: #7D889E;
     padding: 15px 32px;
     border: 2px, solid, #ADEADC;    
     text-align: center;
@@ -146,12 +161,9 @@ header{
     transition-duration: 0.9s;
     font-size: 16px;
     font-weight: 700;
+
 }
-.a{
-    text-decoration: none;
-    color: rgb(12, 68, 200);
-    
-}
+
 .nav a .button{
     font-weight: 600px;
     padding-right: 10px;
@@ -162,18 +174,20 @@ header{
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 70%;
     transition-duration: 0.9s;
     font-size: 16px;
     font-weight: 700;
+
 }
 .nav a:hover{
-color: gray;
+color: white;
 }
 .btn-columnas{
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+    
 
 }
 .nav{
@@ -193,8 +207,10 @@ padding-bottom: 2px;
 width: 30%;
 padding-top: 2px;
 column-rule-style: double;
+
 }
 .MensajeBody{
+    color: white;
     display: block;
     text-align: center;
     font-weight: 700;
@@ -203,22 +219,40 @@ column-rule-style: double;
     overflow-x: hidden;
 
 }
+/*ubicacion*/
+.ubicacion{
+    padding-left: 0%;
+   display: flex;
+   position: relative;
+   margin-top: -10em;
+   margin-left: 30px;
+   overflow: hidden;
+}
+.textubi{
+ display: flex;
+ position: relative;
+ margin-top: -16em;
+ font-size: 30px;
+ left: 25em;
+ overflow:hidden;
+}
 footer{
     
     position: relative;
-    margin-top: -3em;
+    margin-top: 3em;
     bottom: 0;    
     left: 0;
-    background-color: #86AD99;
+    background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%);
     height: 150px;
     width: 100%;  
     overflow: hidden;
     
 } 
 .textofooter{
+    margin-top: -1em;
     font-size: 30px;
     text-align: left;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .facebook a{
     margin-top: 3em;
@@ -235,6 +269,7 @@ footer{
     width: 35%;
     height: 35%;
     margin-left: 50px;
+    overflow-x: hidden;
 }
 .youtube a{
     margin-top: 3em;
@@ -243,6 +278,7 @@ footer{
     width: 35%;
     height: 35%;
     margin-left: 200px;
+    overflow-x: hidden;
 }
 
 /* Se modifica el mensaje porque está dentro del footer*/
@@ -252,6 +288,7 @@ footer{
     font-weight: 700;
     margin-top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 .Copy p{        
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -259,6 +296,7 @@ footer{
     text-align: center;
     bottom: 0;
     padding: 50px;
+    overflow-x: hidden;
 }
 .portfolio a{
     margin-left: 75em;
@@ -266,13 +304,15 @@ footer{
     width: 50%;
     display: flex;
     position: absolute;
-    margin-top: -5em;
+    margin-top: -7em;
+    overflow-x: hidden;
 }
 .tfooter{
     text-align: right;
     font-size: 30px;
     margin-right: 3em;
-    margin-top: -5em;
+    margin-top: -7em;
+    overflow-x: hidden;
 }
 
 

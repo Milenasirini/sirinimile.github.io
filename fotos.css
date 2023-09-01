@@ -1,0 +1,167 @@
+*{
+    border:0;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 575.98px) and (orientation:portrait){
+body{background: #6DA6FA;}
+}
+@media (min-width: 1199.98px){
+    body {background: #6DA6FA;}
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){
+    body {background: #6DA6FA}
+}
+
+header{
+    display:flex;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.divclass{
+    float:left;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.divclass img{
+    max-width: 120%;
+    height: 100px;
+    
+}
+    header{
+        background-image: linear-gradient(to bottom right, #99E7FA 30%,#000000 60%);
+       
+    }
+
+.clima{
+    align-items: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@font-face{
+    font-family: fuente;
+    src: url(JMH\ Typewriter\ dry-Black.otf)
+}
+
+body{    
+   
+   background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%)
+        
+}
+
+
+
+
+.auto1 img{
+ display: flex;
+ position: relative;
+ height: 20%;
+ width: 20%;
+padding: 3px;
+}
+/*boton1*/
+.btn-groups .a {
+    display: inline-block;
+    padding: 5px 2px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4caf89;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn-groups:hover {
+    background-color: #3e6b8e}
+    
+  .btn-groups:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+
+.MensajeBody{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 30px;
+    overflow-x: hidden;
+
+}
+footer{
+    position: relative;
+    bottom: 0;    
+    left: 0;
+    background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%);
+    height: 150px;
+    width: 100%;  
+    overflow: hidden;
+    
+}
+.textofooter{
+    font-size: 30px;
+    text-align: left;
+    overflow-x: hidden;
+}
+.facebook a{
+    position:absolute;
+    display: flex;
+    width: 30%;
+    height: 30%;    
+    overflow-x: hidden;
+}
+.instagram a{
+    position: absolute;
+    display: flex;
+    width: 35%;
+    height: 35%;
+    margin-left: 50px;
+}
+.youtube a{
+    position: absolute;
+    display: flex;
+    width: 35%;
+    height: 35%;
+    margin-left: 200px;
+}
+
+/* Se modifica el mensaje porque está dentro del footer*/
+.MensajeFooter{
+    position: absolute;
+    left: 550px;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Copy p{        
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    bottom: 0;
+    padding: 50px;
+}
+.portfolio a{
+    margin-left: 75em;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    position: absolute;
+    margin-top: -7em;
+}
+.tfooter{
+    text-align: right;
+    font-size: 30px;
+    margin-right: 3em;
+    margin-top: -6em;
+}
