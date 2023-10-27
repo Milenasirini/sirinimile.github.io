@@ -1,14 +1,8 @@
 *{
     border:0;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-@media (max-width: 575.98px) and (orientation:portrait){
-}
-@media (min-width: 1199.98px){}
-
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){}
-
 header{
     display:flex;
     height: 100px;
@@ -27,10 +21,9 @@ header{
     height: 100px;
     
 }
-    header{
-        background-image: linear-gradient(to bottom right, #99E7FA 30%,#000000 60%);
-       
-    }
+  header{
+ background-image: linear-gradient(to bottom right, #99E7FA 30%,#000000 60%);
+}
 
 .clima{
     align-items: right;
@@ -43,30 +36,10 @@ header{
 }
 
 body{    
-      background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%);
-      background-repeat: no-repeat;
-       }
-*{
-box-sizing:border-box; 
+ background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%);
+ background-size: contain;
+        
 }
-.columna img{
-    height: 13em;
-    width: 20em;
-}
-
-.columna{
- margin-left: 10em;
-}
-.fila img{
-height: 13em;
-width: 20em;
-}
-.fila {
-    margin-left: 10em;
-}
-
-
-
 .MensajeBody{
     display: block;
     text-align: center;
@@ -76,48 +49,50 @@ width: 20em;
     overflow-x: hidden;
 
 }
+ul.nser{
+  font-size: 20px;
+  margin-left: 2em;
+  list-style-type: square;
+  list-style-position: inside;
+  column-count: 2;
+}
+
 footer{
-    position: relative;
-    bottom: 0;    
+    position:absolute;  
     left: 0;
+    bottom: 0;
     background-image: linear-gradient(to bottom right, #99E7FA 30%,#BFBFBF 60%);
-    background-repeat: no-repeat;
     height: 150px;
     width: 100%;  
     overflow: hidden;
     
 }
-.textofooter p{
-    margin-left: 1em;
-    text-decoration: none;
-    color: #000000;
-    font-size: 30px;
-    text-align: left;
-    overflow-x: hidden;
+.textofooter{
+  margin-left: 1em;
+  font-size: 30px;
+  text-align: left;
+  overflow-x: hidden;
 }
 .facebook a{
     position:absolute;
+    left: 4em;
     display: flex;
-    left:5em ;
-    margin-top: 1em;
     width: 30%;
     height: 30%;    
     overflow-x: hidden;
 }
 .instagram a{
     position: absolute;
+    left: 4em;
     display: flex;
-    left: 5em;
-    margin-top: 1em;
     width: 35%;
     height: 35%;
     margin-left: 50px;
 }
 .youtube a{
+    left: 3em;
     position: absolute;
     display: flex;
-    left: 5em;
-    margin-top: 1em;
     width: 35%;
     height: 35%;
     margin-left: 200px;
@@ -144,11 +119,11 @@ footer{
     width: 50%;
     display: flex;
     position: absolute;
-    margin-top: -7em;
+    margin-top: -5em;
 }
 .tfooter{
     text-align: right;
     font-size: 30px;
     margin-right: 3em;
-    margin-top: -6em;
+    margin-top: -5em;
 }
