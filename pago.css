@@ -1,18 +1,19 @@
 *{
     border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 header{
     background: linear-gradient(to bottom right, #99E7FA 30%,#000000 60%);
     display:flex;
+    background-repeat: no-repeat;
     height: 100px;
     justify-content: space-around;
     overflow: hidden;
     overflow: hidden;
 }
 
-.logotaller img{
+.logomecanico img{
     display: flex;
     position: relative;
     top:0.5em;
@@ -49,18 +50,56 @@ header{
 }
 .volver{
  text-align: center;
-}
+}        
 /*empieza el body*/
-.fndqs img{
+body{
+    overflow-x: hidden;
+    position: relative;
+    background-attachment: fixed;
+    justify-content: space-between;
+}
+/*fondo body*/
+.fndpago img{
     width: 100%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
 }
-.textodelbody{
+/*formas de pago*/
+.textbody{
     position: absolute;
-    text-align: center;
-    font-size: 35px;
+    display: flex;
+    font-weight: 500;
+    font-size: 30px;
+    opacity: 0.9;
+    z-index: 1;
+    left: 14em;
+    top: 8em;
+
+}
+.frmpago{
+    background-color: #E2EEF9;
+    display: flex;
+    position: absolute;
+    height: 50%;
+    width: 50%;
     top: 10em;
+    left: 20em;
+    border-radius: 20%;
+}
+
+.efectivo{
+    height:50%;
+    width:50%;
+    left: 5em;
+    top: 8em;
+    position: relative;
+    display: flex;
+}
+.mpago img{
+    display: flex;
+    position: relative;
+    left:5em;
+    top: 8em;
 }
 /*empieza el footer*/
 footer{
